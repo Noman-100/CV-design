@@ -1,0 +1,430 @@
+   * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+   html,
+   body {
+      background-color: #ddd;
+   }
+
+   div.container {
+      width: 85%;
+      background-color: paleturquoise;
+      margin: 0 auto;
+      padding: 20px 20px 80px 20px;
+      box-sizing: border-box;
+      position: relative;
+   }
+
+   /*--      header start      --*/
+   div.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: teal;
+      border-bottom: 2px solid black;
+      padding-bottom: 15px;
+   }
+
+   div.header div.img-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   div.header div.img-name img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      border: 0.5px solid #888;
+      overflow: hidden;
+   }
+
+   div.header div.img-name div.name {
+      padding: 0px 20px;
+
+   }
+
+   div.header div.h-contact {
+      font-weight: bold;
+   }
+
+   div.header div.h-contact span {
+      transition: color 0.3s ease-in-out;
+   }
+
+   div.header div.h-contact span:hover {
+      color: coral;
+   }
+
+   /*--      header end      --*/
+   /*-- personal information --*/
+   div.per-info {
+      padding: 20px 0px;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      border-bottom: 1px solid black;
+   }
+
+   div.per-info div.per {
+      color: teal;
+      flex-basis: 30%;
+   }
+
+   div.per-info div.info {
+      flex-basis: 70%;
+   }
+
+   /*-- personal information --*/
+   /*--     worksop start    --*/
+   div.work-place {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0px;
+      border-bottom: 1px solid #000;
+   }
+
+   div.work-place div.work {
+      color: teal;
+      flex-basis: 30%;
+   }
+
+   div.work-place div.place {
+      flex-basis: 70%;
+   }
+
+   div.work-place div.place span {
+      color: teal;
+   }
+
+   /*--     worksop end    --*/
+   /*--   education Start  --*/
+
+   div.education {
+      display: flex;
+      border-bottom: 1px solid black;
+      padding: 20px 0px;
+      justify-content: space-between;
+   }
+
+   div.education div.edu-name {
+      flex-basis: 30%;
+      color: teal;
+   }
+
+   div.education div.edu-ingin {
+      flex-basis: 35%;
+   }
+
+   div.education div.edu-ingin span {
+      color: teal;
+   }
+
+   div.education div.edu-develop {
+      flex-basis: 35%;
+   }
+
+   div.education div.edu-develop span {
+      color: teal;
+   }
+
+   /*--   education Ennd  --*/
+   /*-- horon and award  Start --*/
+
+   div.honor-award {
+      display: flex;
+      padding: 20px 0px;
+      border-bottom: 1px solid black;
+      justify-content: space-between;
+   }
+
+   div.honor-award div.honor-name {
+      flex-basis: 30%;
+      color: teal;
+   }
+
+   div.honor-award div.award {
+      flex-basis: 70%;
+   }
+
+   div.honor-award div.award ul {
+      list-style-position: inside;
+   }
+
+   /*-- horon and award  End --*/
+   /*-- Reference Start --*/
+
+   div.ref {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0px;
+      border-bottom: 1px solid black;
+   }
+
+   div.ref div.ref-name {
+      flex-basis: 30%;
+      color: teal;
+   }
+
+   div.ref div.ref-one {
+      flex-basis: 35%;
+   }
+
+   div.ref div.ref-one span {
+      color: teal;
+   }
+
+   div.ref div.ref-two {
+      flex-basis: 35%;
+   }
+
+   div.ref div.ref-two span {
+      color: teal;
+   }
+
+   /*-- Reference End --*/
+   /*--  Footer Start --*/
+
+   div.footer {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      padding: 25px 0px 10px 0px;
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+   }
+
+   div.footer ul {
+      display: inline-block;
+      list-style-type: none;
+   }
+
+   div.footer ul li {
+      float: left;
+   }
+
+   div.footer ul li a {
+      color: #ccc;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding: 10px 13px;
+      transition: all 0.3s ease-in-out;
+   }
+
+   div.footer ul li a:hover {
+      text-decoration: underline dotted;
+      color: gray;
+   }
+
+   div.footer p {
+      padding-top: 10px;
+      color: #aaa;
+   }
+
+   section {
+      position: fixed;
+      color: #aaa;
+      text-shadow: 1px 1px 150px #fff;
+      opacity: 1;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+
+   /*--   Footer End  --*/
+   /**/
+
+   /*--     media Mobile    --*/
+
+   @media screen and (max-width : 500px) {
+
+      div.container {
+         width: 100%;
+         padding: 10px 10px 75px 10px;
+         position: relative;
+      }
+
+      span.teal {
+         color: teal;
+         font-weight: 500;
+      }
+
+      /*-- header start --*/
+
+      div.header {
+         display: block;
+      }
+
+
+
+      div.header div.img-name {
+         justify-content: space-evenly;
+         margin-left: -90px;
+      }
+
+      div.header div.img-name img {
+         height: 55px;
+         width: 55px;
+      }
+
+      div.header div.img-name div.name {
+         padding: 0;
+         margin-left: -30px;
+      }
+
+      div.header div.h-contact {
+         padding-top: 10px;
+         width: 71%;
+         margin: 0 auto;
+      }
+
+      /*-- personal information --*/
+
+      div.per-info {
+         display: block;
+         padding: 10px 0px 15px 0px;
+      }
+
+      div.per-info div.per {
+         text-align: center;
+         padding: 5px;
+      }
+
+      /*--     worksop start    --*/
+
+      div.work-place {
+         display: block;
+         padding: 10px 0px 15px 0px;
+      }
+
+      div.work-place div.work {
+         text-align: center;
+         padding: 8px 0px;
+      }
+
+      div.work-place div.place span p {
+         padding-bottom: 5px;
+      }
+
+      div.work-place div.place span h3 {
+         font-weight: 450;
+         font-size: 1.13rem;
+      }
+
+      /*--   header end   --*/
+      /*-- Edication start --*/
+
+      div.education {
+         display: block;
+         padding: 10px 0px 15px 0px;
+      }
+
+      div.education div.edu-name {
+         text-align: center;
+         padding: 5px;
+      }
+
+      div.education div.edu-ingin span h3,
+      div.education div.edu-develop span h3 {
+         font-size: 1.12rem;
+         font-weight: 450;
+      }
+
+      div.education div.edu-ingin {
+         padding-bottom: 10px;
+      }
+
+      div.education div.edu-ingin span p,
+      div.education div.edu-develop span p {
+         padding-bottom: 5px;
+
+      }
+
+      /*-- education end --*/
+      /*  honor-award end  */
+
+      div.honor-award {
+         display: block;
+         padding: 10px 0px 15px 0px;
+      }
+
+      div.honor-award div.honor-name {
+         text-align: center;
+         padding: 5px;
+      }
+
+      div.honor-award div.award {
+         padding-left: 15px;
+      }
+
+      div.honor-award div.award ul li {
+         list-style-position: outside;
+         padding: 3px 0px;
+      }
+
+      /*-- honor-award end --*/
+      /*-- Reference start --*/
+
+      div.ref {
+         display: block;
+         padding: 10px 0px 15px 0px;
+      }
+
+      div.ref div.ref-name {
+         text-align: center;
+         padding: 5px;
+      }
+
+      div.ref div.ref-one {
+         padding-bottom: 10px;
+      }
+
+      div.ref div.ref-one span h3,
+      div.ref div.ref-two span h3 {
+         font-size: 1.12rem;
+         font-weight: 450;
+      }
+
+      div.ref div.ref-one span p,
+      div.ref div.ref-two span p {
+         padding-bottom: 3px;
+      }
+
+      div.ref div.ref-one p,
+      div.ref div.ref-two p {
+         padding-left: 20px;
+      }
+
+      /*-- Reference end  --*/
+      /*    Foiter start    */
+
+      div.footer {
+         width: 100%;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         right: 0px;
+      }
+
+      div.footer ul li a {
+         padding: 5px 8px;
+         font-size: 1rem;
+      }
+
+      div.footer p {
+         font-size: 0.7rem;
+      }
+
+      /*     Foiter end     */
+
+   }
+
+   /*-- media Mobile screen end --*/
+   /*  */
