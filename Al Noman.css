@@ -1,0 +1,90 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-color: #ddd;
+}
+
+div.full-content {
+   background-color: #424242;
+   max-width: 480px;
+   margin: 0 auto;
+   /*------- height none required -----*/
+   height: 100vh;
+}
+
+   /*--------- Nav part -----------*/
+ nav {
+    position: sticky;
+   z-index: 100;
+   top: 0px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2px 10px;
+   background-color: #435E89;
+}
+
+div.logo {
+   height: 40px;
+   width: auto;
+   background-color: gray;
+   border-radius: 50%;
+}
+
+div.logo img {
+   height: 40px;
+   width: auto;
+   border-radius: 50%;
+}
+
+ul.middle-bar li,
+ul.right-bar li {
+   display: inline-block;
+}
+
+ul.middle-bar li {
+   margin: -2px;
+   border-right: 0.5px solid black;
+}
+
+ul.middle-bar li a:hover {
+   color: coral;
+}
+
+ul.middle-bar li:last-child {
+   border: none;
+}
+
+ul.middle-bar li a {
+   padding: 4px 4px;
+   color: #fff;
+   text-decoration: none;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+ul.right-bar li {
+   background-color: lightcoral;
+   padding: 4px 6px;
+   border: 1px solid indigo;
+   border-radius: 50px;
+   transition: all 2s ease-in-out 0s;
+}
+
+ul.right-bar li a {
+   padding: 4px 7px;
+   color: #fff;
+   text-decoration: none;
+}
+
+ul.right-bar li:hover {
+   background-color: chocolate;
+}
+   /*------- header part --------*/
+header {
+   height: 100px;
+   background-color: #ddd;
+}
